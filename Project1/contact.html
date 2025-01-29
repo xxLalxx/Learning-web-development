@@ -1,0 +1,28 @@
+<div id="contact">
+    <a href="project1.html">back</a>
+        <h2>Contact Us page</h2>
+        <form action="">
+            <fieldset>
+                <legend>Details</legend>
+                <label for="cname">Name</label>
+                <input type="text" id="cname" name="cname" placeholder="enter the name" required>
+                <br>
+                <label for="pnumber">Mobile Number</label>
+                <input type="tel" id="pnumber" name="pnumber" pattern="[0-9]{10}" placeholder="XXXXX XXXXX" maxlength="10" title="enter digit only">
+                <br>
+                <label for="ctype">Type of communication</label>
+                <select name="ctype" id="ctype">
+                    <option value="sales">Sales</option>
+                    <option value="service">Service</option>
+                    <option value="enquiry">Enquiry</option>
+                    <option value="advertisement">Advertisement</option>
+                    <option value="complaint">Complaint</option>
+                </select>
+                <br>
+                <label for="description">Description</label>
+                <textarea name="description" id="description" rows="5" cols="50" placeholder="enter the description" required></textarea>
+            </fieldset>
+            <br>
+            <input type="submit" value="submit" >
+        </form>
+    </div>
