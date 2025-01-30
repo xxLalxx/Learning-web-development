@@ -9,7 +9,12 @@
     <script>
         let n,p=0;
         n= parseInt(prompt("Enter the number"));
-        for(i=2;i<n;i++){
+
+        if(n==1){
+            document.write("It is not prime");
+        }
+        else{
+            for(i=2;i<n;i++){
             if(n%i==0){
                 p++;
             }
@@ -20,6 +25,8 @@
         else{
             document.write("It is not prime");
         }
+        }
+        
     </script>
     
 </body>
