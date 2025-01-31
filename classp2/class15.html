@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle</title>
+</head>
+<body>
+    <script>
+        let n1,n2,n3;
+        n1 = parseInt(prompt("Enter first length "));
+        n2 = parseInt(prompt("Enter second length "));
+        n3 = parseInt(prompt("Enter third length "));
+
+        if((n1==n2) &&  (n2==n3)){
+            document.write("Equilateral triangle");
+        }
+        else if((n1==n2) || (n1==n3) || (n2==n3)){
+            document.write("Isosceles triangle");
+        }
+        else{
+            document.write("A triangle");
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
