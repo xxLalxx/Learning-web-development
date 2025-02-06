@@ -1,0 +1,35 @@
+#identity{
+    background-color: #E8F9FF;
+    
+}
+
+#profile{
+    border-radius: 100px;
+    border: solid;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 21%;
+    
+}
+
+#desig{
+    margin-top: 6px;
+}
+
+#contact{
+    text-align: center;
+    border-radius: 70px;
+    width: 80px;
+    background-color: #C4D9FF;
+}
+
+#btn{
+    margin-top: 50px;
+    text-align: center;
+    
+}
+
+#info{
+    text-decoration: none;
+    
+}
