@@ -1,0 +1,7 @@
+table{
+    border-collapse: collapse;
+    width: 40%;
+}
+th{
+    text-align: left;
+}

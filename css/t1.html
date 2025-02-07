@@ -1,0 +1,72 @@
+table with 3 column name, price, action
+action column 2 icon- delete,edit 
+price data right aligned
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 500px;
+      }
+
+      .fa {
+        font-size: 30px;
+      }
+
+      .ralign{
+        text-align: right;
+      }
+
+      i{
+        margin-left: 20px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <table border="5px">
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td>Rose</td>
+        <td class="ralign">50</td>
+        <td>
+            <i class="fa fa-trash"></i>
+            <i class="fa fa-pencil"></i> 
+        </td>
+        
+      </tr>
+
+      <tr>
+        <td>Chocolate</td>
+        <td class="ralign">150</td>
+        <td>
+            <i class="fa fa-trash"></i>
+            <i class="fa fa-pencil"></i> 
+        </td>
+      </tr>
+
+      <tr>
+        <td>Teddy</td>
+        <td class="ralign">700</td>
+        <td>
+            <i class="fa fa-trash"></i>
+            <i class="fa fa-pencil"></i> 
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
