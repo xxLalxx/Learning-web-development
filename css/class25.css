@@ -1,0 +1,15 @@
+div.des p{
+    background-color: yellow;
+}
+
+div.cs > p{
+    background-color: aqua;
+}
+
+div.ads + p{
+    background-color: blanchedalmond;
+}
+
+div.gss ~ p{
+    background-color: aquamarine;
+}
