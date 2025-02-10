@@ -1,0 +1,20 @@
+h2.cam {
+    border: 3px solid green;
+    margin: auto;
+    width: 60%;
+}
+
+h2.cata{
+    border: 3px solid greenyellow;
+    text-align: center;
+}
+
+h2.ra{
+    float: right;
+    border: 3px solid blue;
+    width: 100px;
+}
+
+h2.la{
+    border: 3px solid blueviolet;
+}
