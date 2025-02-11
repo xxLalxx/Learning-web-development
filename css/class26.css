@@ -1,0 +1,24 @@
+body{
+    background-color: aqua;
+}
+
+@media only screen and (max-width:600px){
+    body{background-color: brown;}
+}
+
+@media only screen and (min-width:600px){
+    body{background-color: blueviolet;}
+}
+
+@media only screen and (min-width:768px){
+    body{background-color: burlywood;}
+}
+
+@media only screen and (min-width:992px){
+    body{background-color: pink;}
+}
+  
+@media only screen and (min-width:1200px){
+    body{background-color: orange;}
+}
+    
