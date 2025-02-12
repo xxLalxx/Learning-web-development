@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Left, Blue Right</title>
+    <link rel="stylesheet" href="q3.css">
+    <style>
+        
+        @media only screen and (min-width:600px){
+            .box {
+                width: 100vw;
+                height: 100vh;
+                border: 2px solid black;
+                overflow: hidden;
+            }
+
+        .left {
+                width: 50%;
+                height: 100%;
+                float: left;
+                background-image: linear-gradient(20deg,rgb(243, 213, 175),rgb(109, 186, 216));
+            }
+
+        /* .left img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill; 
+            } */
+
+        .right {
+                width: 50%;
+                height: 100%;
+                float: right;
+            }
+        }
+
+        @media only screen and (max-width:600px){
+            .left{
+                display: none;
+            } 
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left">
+            <!-- <img src="demo.jpg" alt="Left Side Image"> -->
+        </div>
+        <div class="right">
+            <form action="">
+                <h2>Login Form</h2>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="pin">Password</label><br>
+                <input type="text" id="pin" name="pin"><br>
+                <input type="checkbox" id="cb">
+                <label for="cb" style="font-weight:lighter;">Remember me</label><br>
+                <input type="button" value="Login">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

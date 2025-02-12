@@ -1,0 +1,35 @@
+/* h2{
+    font-family: sans-serif;
+    margin-left: 20px;
+} */
+
+form{
+    font-family: sans-serif;
+    margin-left: 20px;
+    margin-top: 25vh;
+}
+
+form h2{
+    color: orangered;
+}
+
+form label{
+    font-weight: bold;
+}
+
+input{
+    margin-top: 5px;
+}
+
+[type="text"]{
+    box-sizing: border-box;
+    width: 90%;
+}
+
+[type="button"]{
+    width: 90%;
+    height: 25px;
+    background-color: orangered;
+    color: white;
+}
+
