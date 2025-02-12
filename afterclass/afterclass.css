@@ -9,3 +9,20 @@
 
 div{border: 2px solid green;}
 
+.pk{
+    border: 1px solid red;
+    position: relative;
+    margin-top: 20px;
+}
+
+.pk1{
+    border: 5px solid green;
+    background-color: aqua;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+    float: right;
+    
+}
+
+
