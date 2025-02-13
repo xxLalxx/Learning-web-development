@@ -3,14 +3,21 @@
     margin-left: 20px;
 } */
 
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
 form{
     font-family: sans-serif;
-    margin-left: 20px;
-    margin-top: 25vh;
+    margin-left: 6%;
+    margin-top: 30vh;
+    font-size: large;
 }
 
 form h2{
-    color: orangered;
+    color: rgb(255, 69, 0);
 }
 
 form label{
@@ -19,17 +26,25 @@ form label{
 
 input{
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 [type="text"]{
     box-sizing: border-box;
-    width: 90%;
+    width: 95%;
+    height: 35px;
 }
 
 [type="button"]{
-    width: 90%;
+    width: 95%;
     height: 25px;
-    background-color: orangered;
+    background-color: rgb(255, 69, 0);
     color: white;
+    height: 35px;
+    border: 0px;
+}
+
+#cb{
+    margin-left: 0px;
 }
 

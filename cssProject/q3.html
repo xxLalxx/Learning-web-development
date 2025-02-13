@@ -19,7 +19,7 @@
                 width: 50%;
                 height: 100%;
                 float: left;
-                background-image: linear-gradient(20deg,rgb(243, 213, 175),rgb(109, 186, 216));
+                background-image: linear-gradient(20deg,rgb(243, 214, 175),rgba(132, 152, 237, 1));
             }
 
         /* .left img {
@@ -38,7 +38,13 @@
         @media only screen and (max-width:600px){
             .left{
                 display: none;
-            } 
+            }
+            
+            [type="button"]{
+            height: 45px;
+            
+        }
+
         }
 
     </style>
@@ -52,9 +58,9 @@
         <div class="right">
             <form action="">
                 <h2>Login Form</h2>
-                <label for="email">Email</label><br>
+                <label for="email">Email :</label><br>
                 <input type="text" id="email" name="email"><br>
-                <label for="pin">Password</label><br>
+                <label for="pin">Password :</label><br>
                 <input type="text" id="pin" name="pin"><br>
                 <input type="checkbox" id="cb">
                 <label for="cb" style="font-weight:lighter;">Remember me</label><br>
