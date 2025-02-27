@@ -15,36 +15,48 @@
         text-decoration: none;
         color: white;
     }
+    body{
+        overflow-x: hidden;
+    }
+    
    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark d-flex justify-content-between">
-    <!-- <span class="navbar-text text-li">Project Name</span> -->
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a href="#" class="nav-link"><span>Project name</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand text-secondary" href="#">Project name</a>
+      <button
+        class="navbar-toggler ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Contact</a>
+          </li>
         </ul>
-        <ul class="navbar-nav">
-            <li class="nav-item text-secondary">Logged in as Username</li>
-        </ul>
-    </nav>
+        <span class="navbar-text"> Logged in as Username </span>
+      </div>
+    </nav>
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-2 p-3">
-                <div class="card">
+            <div class="col-12 col-md-2 p-3 col-expand-sm">
+                <div class="card bg-light border-0">
                     <b class="d-block px-3 mt-2 text-secondary">SIDEBAR</b>
-                    <a href="#" class="d-block px-3 ah">Link</a>
+                    <a href="#" class="d-block px-3 ah bg-primary text-white">Link</a>
                     <a href="#" class="d-block px-3 ah">Link</a>
                     <a href="#" class="d-block px-3 ah">Link</a>
                     <a href="#" class="d-block px-3 ah">Link</a>
@@ -63,14 +75,30 @@
                     <a href="#" class="d-block px-3 ah mb-2">Link</a>
                 </div>
             </div>
-            <div class="col-10 p-3">
-                <div class="card p-5 mb-4">
+            <div class="col-12 col-md-10 p-3">
+                <div class="card p-5 mb-4 bg-light border-0">
                     <div class="card-body">
                         <h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Hello, world!</h1>
                         <p>
                             This is a template for simple marketing or informational website. It inbcludes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
                         </p>
-                        <button type="button" class="btn btn-primary">Learn more &#8608;</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Learn more »</button>
+                        <div class="modal" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Modal Heading</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Modal body..
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -80,7 +108,7 @@
                                     <h3>Heading</h3>
                                     Donec id elit non mi porta gravida at eget metus.Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui.
                                     <br>
-                                    <button class="btn btn-secondary mt-2">View details &#8608;</button>
+                                    <button class="btn btn-light btn-sm border mt-2">View details »</button>
                                 </div>
                             </div>
                             <div class="card border-0">
@@ -88,7 +116,7 @@
                                     <h3>Heading</h3>
                                     Donec id elit non mi porta gravida at eget metus.Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui.
                                     <br>
-                                    <button class="btn btn-secondary mt-2">View details &#8608;</button>
+                                    <button class="btn btn-light btn-sm border mt-2">View details »</button>
                                 </div>
                             </div>
                             <div class="card border-0">
@@ -96,7 +124,7 @@
                                     <h3>Heading</h3>
                                     Donec id elit non mi porta gravida at eget metus.Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui.
                                     <br>
-                                    <button class="btn btn-secondary mt-2">View details &#8608;</button>
+                                    <button class="btn btn-light btn-sm border mt-2">View details »</button>
                                 </div>
                             </div>
                         </div>
@@ -108,7 +136,7 @@
                                     <h3>Heading</h3>
                                     Donec id elit non mi porta gravida at eget metus.Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui.
                                     <br>
-                                    <button class="btn btn-secondary mt-2">View details &#8608;</button>
+                                    <button class="btn btn-light btn-sm border mt-2">View details »</button>
                                 </div>
                             </div>
                             <div class="card border-0">
@@ -116,7 +144,7 @@
                                     <h3>Heading</h3>
                                     Donec id elit non mi porta gravida at eget metus.Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui.
                                     <br>
-                                    <button class="btn btn-secondary mt-2">View details &#8608;</button>
+                                    <button class="btn btn-light btn-sm border mt-2">View details »</button>
                                 </div>
                             </div>
                             <div class="card border-0">
@@ -124,7 +152,7 @@
                                     <h3>Heading</h3>
                                     Donec id elit non mi porta gravida at eget metus.Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui.
                                     <br>
-                                    <button class="btn btn-secondary mt-2">View details &#8608;</button>
+                                    <button class="btn btn-light btn-sm border mt-2">View details »</button>
                                 </div>
                             </div>
                         </div>
