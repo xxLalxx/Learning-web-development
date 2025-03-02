@@ -6,8 +6,8 @@
     <title>Calculator</title>
 </head>
 <body>
-    <h1>Calculator</h1>
-    <h4><span id="n1"></span> <span id="op"></span> <span id="n2"></span> = <span id="ans"></span></h4>
+    <h1 id="cal">Calculator</h1>
+    <h4 id="state"><span id="n1"></span> <span id="op"></span> <span id="n2"></span> = <span id="ans"></span></h4>
 
     <script>
         let n1,n2,sym,ans;
@@ -36,6 +36,11 @@
             ans = n1*n2;
             document.getElementById("ans").innerHTML=ans;
             document.getElementById("op").innerHTML="x";
+        }
+        else{
+            window.alert("Invalid option");
+            document.getElementById("cal").innerHTML="Reload the page"; 
+            document.getElementById("state").innerHTML="Invalid option";
         }
     </script>
 </body>
