@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator with function</title>
+</head>
+<body>
+    <h1 id="cal">Calculator</h1>
+    <h4 id="state"><span id="n1"></span> <span id="op"></span> <span id="n2"></span> = <span id="ans"></span></h4>
+
+    <script>
+
+        function add(n1,n2){
+            ans = n1+n2;
+            document.getElementById("ans").innerHTML=ans;
+            document.getElementById("op").innerHTML="+";
+        }
+
+        function sub(n1,n2){
+            ans = n1-n2;
+            document.getElementById("ans").innerHTML=ans;
+            document.getElementById("op").innerHTML="-";
+        }
+
+        function div(n1,n2){
+            ans = n1/n2;
+            document.getElementById("ans").innerHTML=ans;
+            document.getElementById("op").innerHTML="/";
+        }
+
+        function add(n1,n2){
+            ans = n1*n2;
+            document.getElementById("ans").innerHTML=ans;
+            document.getElementById("op").innerHTML="*";
+        }
+
+        let n1,n2,sym,ans;
+        n1 = parseInt(prompt("Enter the first no:"));
+        n2 = parseInt(prompt("Enter the second number:"))
+        window.alert("Enter 1.Add, 2.Subtract, 3.Divide, 4.Multiply");
+        sym = parseInt(prompt("Enter your choice"));
+        document.getElementById("n1").innerHTML=n1;
+        document.getElementById("n2").innerHTML=n2;
+        if(sym == 1){
+            add(n1,n2);
+        }
+        else if(sym == 2){
+            sub(n1,n2);
+        }
+        else if(sym == 3){
+            div(n1,n2);
+        }
+        else if(sym == 4){
+            mul(n1,n2);
+        }
+        else{
+            window.alert("Invalid option");
+            document.getElementById("cal").innerHTML="Reload the page"; 
+            document.getElementById("state").innerHTML="Invalid option";
+        }
+    </script>
+</body>
+</html>
