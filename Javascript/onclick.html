@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let count=0;
+        function clicku(){
+            count++;
+            document.getElementById('demo').innerHTML=count;
+            if(count>0){
+                document.body.style.backgroundColor="lightblue";
+            }
+            if(count>1){
+                document.body.style.border="solid";
+            }
+            if(count>2){
+                document.getElementById("demo").style.color="blue"
+            }          
+        }
+    </script>
+</head>
+<body>
+    <h1 id="demo">A text to check on click</h1>
+    <button onclick="clicku()">Click me</button>
+    
+</body>
+</html>
