@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to do a multiline search for "is" at the beginning of each line in a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo_1"></p>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "\nJavascript is easy\nEasy as it gets.";
+  var patt1 = /^Easy/m;
+  var result = str.match(patt1);
+  document.getElementById("demo_1").innerHTML = str;
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
