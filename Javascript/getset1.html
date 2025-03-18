@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Multiline arrow function</h2>
+
+<p id="demo">0</p>
+<p id="demo1">1</p>
+<p id="demo2">2</p>
+<p id="demo3">3</p>
+
+<script>
+var myCar = {   
+   color: "blue",
+   make: "Toyota"
+};
+document.getElementById("demo").innerHTML=myCar.color;
+
+var myCar1 = {
+    color: "white",
+    make: "Honda",
+
+    getColor: function(){
+        return this.color;
+    }
+};
+document.getElementById("demo1").innerHTML=myCar1.getColor();
+
+var myCar2 = {
+    color: "grey",
+    make: "Nissan",
+
+    getColor: function(){
+        return this.color;
+    },
+
+    setColor: function(newColor){
+        this.color=newColor;
+    }
+};
+myCar2.setColor("blue");
+document.getElementById("demo2").innerHTML=myCar2.getColor();
+</script>
+
+</body>
+</html>	
