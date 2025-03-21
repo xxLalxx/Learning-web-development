@@ -1,0 +1,1 @@
+document.getElementById("a2").innerHTML =`${n1}+${n2}=${n1+n2}`;

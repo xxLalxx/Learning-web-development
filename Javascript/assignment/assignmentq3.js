@@ -1,0 +1,1 @@
+document.getElementById("a3").innerHTML =`${n1}<sup>2</sup>=${n1**2}`;
