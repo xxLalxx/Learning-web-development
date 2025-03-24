@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial with recursion</title>
+</head>
+<body>
+    <script>
+        function fac(num){
+            if(num==0){
+                return('0');
+            }
+            else if(num==1){
+                return(1);
+            }
+            else{
+                return(num*fac(num-1));
+            }
+        }
+        var n=parseInt(prompt("Enter the number:"));
+        console.log(fac(n));
+    </script>
+</body>
+</html>

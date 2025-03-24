@@ -1,4 +1,4 @@
-n1 = 10, n2 = 20, n3 = 5;
+// n1 = 10, n2 = 20, n3 = 5;
 var a = n1, b = n2, c = n3;
 var discriminant, root1, root2;
 //b^2-4ac is called discriminant
