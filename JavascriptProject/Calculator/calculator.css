@@ -1,0 +1,23 @@
+div.cal_body {
+    width: 60%;
+    margin-left: 20%;
+    padding: 20px;
+    background: rgb(247, 229, 229);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+button{
+    margin-top: 3%;
+    width: 10%;
+    margin-bottom: 3%;
+}
+select{
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 10%;
+    text-align: center;
+    font-weight:bold;
+}
+

@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    margin-top: 50px;
+}
+button {
+    font-size: 18px;
+    margin-top: 20px;
+
+}
+#winner {
+    font-size: 24px;
+    font-weight: bold;
+    color : red;
+    margin-top: 20px;
+}
+.design{
+    background-color: pink;
+    border-radius: 10px;
+    
+}
