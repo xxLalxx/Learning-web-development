@@ -13,17 +13,17 @@ VALUES ('1','Alfred','Berlin','12209','Germany'),
 ('6','Ching','Beijing','S-958 22','China'),
 ('7','Aneesh','Delhi','05021','India');
 
-Q1
+Q1. display customer name in descending order
 SELECT CustomerName FROM customer ORDER BY CustomerName DESC;
 
-Q2
+Q2. display distinct countries
 SELECT DISTINCT Country FROM customer;
 
-Q3
+Q3. display customer id,customer name, city and order by city
 SELECT CustomerID,CustomerName,City FROM customer ORDER by City;
 
-Q4
+Q4. display details of customers from delhi or mumbai
 SELECT * FROM customer WHERE City='Delhi' OR City='Mumbai';
 
-Q5
+Q5. display details of customers from delhi and india
 SELECT * FROM customer WHERE Country='India' AND City='Delhi';
