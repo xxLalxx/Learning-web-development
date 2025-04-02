@@ -1,0 +1,29 @@
+Created a database "Mashupstack"
+Created a table "customer"
+
+Inserted values into customer
+
+INSERT INTO customers
+(CustomerID, CustomerName, City, PostalCode, Country) 
+VALUES ('1','Alfred','Berlin','12209','Germany'),
+('2','Kiran','Delhi','05021','India'),
+('3','Chong','Wuhan','S-958 22','China'),
+('4','Suresh','Mumbai','05023','India'),
+('5','Anna','London','WA1 1DP','UK'),
+('6','Ching','Beijing','S-958 22','China'),
+('7','Aneesh','Delhi','05021','India');
+
+Q1
+SELECT CustomerName FROM customer ORDER BY CustomerName DESC;
+
+Q2
+SELECT DISTINCT Country FROM customer;
+
+Q3
+SELECT CustomerID,CustomerName,City FROM customer ORDER by City;
+
+Q4
+SELECT * FROM customer WHERE City='Delhi' OR City='Mumbai';
+
+Q5
+SELECT * FROM customer WHERE Country='India' AND City='Delhi';
